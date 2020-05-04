@@ -1,4 +1,4 @@
-package ar.edu.unahur.obj2.motores;
+package ar.edu.unahur.obj2.laeratesla.motores;
 
 public interface Motor {
      int getCaballosDeFuerza();

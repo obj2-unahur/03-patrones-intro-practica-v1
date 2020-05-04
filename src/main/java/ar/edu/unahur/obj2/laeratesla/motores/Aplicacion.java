@@ -1,7 +1,4 @@
-package ar.edu.unahur.obj2;
-
-import ar.edu.unahur.obj2.motores.MotorDeportivo;
-import ar.edu.unahur.obj2.motores.MotorEconomico;
+package ar.edu.unahur.obj2.laeratesla.motores;
 
 import java.util.Scanner;
 
