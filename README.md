@@ -190,9 +190,9 @@ El area de una figura agujereada es un tercio del area de la figura original, po
 
 Se solicita poder tener una figura agujereada  por cada figura básica existente.
 
-## Extra Extra !!
+### Extra Extra !!
 
-### Ordenamientos alternativos
+#### Ordenamientos alternativos
 
 Incorporar al diseño la posibilidad de ordenar las figuras por criterios alternativos al area. Por ejemplo, es deseable poder ordenar las figuras por los siguientes criterios:
 
@@ -200,7 +200,7 @@ Incorporar al diseño la posibilidad de ordenar las figuras por criterios altern
 
 - Por tipo (primero regular y luego irregular) y luego por area.
 
-### Validaciones
+#### Validaciones
 
 Se solicita impedir q se pueda instaciar figurar con dimensiones `inválidas`, por ejemplo, un cuadrado de altura negativa o un triangulo de base 0.
 En estos casos se debe arrojar una excepción notificando de tal condición.
