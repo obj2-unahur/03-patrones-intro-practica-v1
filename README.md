@@ -13,7 +13,7 @@ Se desea vincular al sistema una clase de tipo `motorEléctrico` con un funciona
 El motor llega  ya ensamblado de fábrica, por lo cual, no podemos modificarlo ya que esto afecta la garantía del mismo y nuestro convenio con la empresa.
 
 
-# 2 - Aves de invierno
+## 2 - Aves de invierno
 
 
 Como a pepita le constaba volar a lugares fríos 
@@ -47,5 +47,26 @@ por ejemplo 40 km solamente debería descontarse 5 a la energía. Impresionante 
 ((40/2) - 5 -10).
 
 "No vale usar booleanos para saber si las aves tienen bufanda o campera"
+
+
+## 3 - OTA: Online travel agency
+
+Una agencia de turismo online esta desarrollando su nuevo sistema de reservas y cuanta con 3 proveedores de vuelos de los mas conocidos en el mercado:
+
+* Sabre
+* Amadeus
+* Worldspan
+
+Se entregan  ya implementadas las clases que se conectan con estos servicios, ustedes pueden modificarlas para agregarles mas disponibilidad de vuelos o corregir cualquier bug que se encuentre.
+
+La clase Ota es la que modela el comportamiento de la agencia que busca o reserva vuelos. Ya se encuentran definidos estos métodos con sus tests correspondientes.
+
+Ota decide utilizar equitativamente los 3 proveedores, para esto se cuenta con la clase DistribuidorDeTrafico, ya implementada, que nos dice el código de proveedor a utilizar.
+
+Se solicita:
+
+* implementar la Clase OTA para q utilice los 3 proveedores (y cualquier otro que pudiese aparecer)
+* se puede modificar o cambiar cualquiera de las clases provistas salvo la signatura de los métodos de las clases Amadeus, Sabre y Worldspan.
+
 
 

@@ -1,4 +1,4 @@
-package ar.edu.unahur.obj2.laeratesla.motores;
+package ar.edu.unahur.obj2.laeratesla;
 import ar.edu.unahur.obj2.laeratesla.motores.Motor;
 
 public class Auto {
