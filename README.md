@@ -69,4 +69,143 @@ Se solicita:
 * se puede modificar o cambiar cualquiera de las clases provistas salvo la signatura de los métodos de las clases Amadeus, Sabre y Worldspan.
 
 
+## 3 - Pumper Nic
+
+### Hamburguesas
+
+Una nueva cadena de hamburguesas, `Pumper Nic`, esta desarrollando su software de facturación  para los distintos tipos de hamburguesas que manejan.
+
+Las hamburguesas base vienen con un medallón y acompañadas de lechuga y tomate.
+
+Tienen los siguientes precios:
+
+* Hamburguesas de carne: $ 200
+* Hamburguesas de Pollo: $ 150
+* Hamburguesas de Lentejas: $ 220
+
+Todas las hamburguesas se pueden pedir con mas de un medallón, es decir, pueden venir con 2, 3 y hasta 4 medallones del mismo tipo. El precio q se agrega por cada medallón es de $ 50.
+
+Hay otros extras que se le pueden agregar a las hamburguesas:
+
+* Queso Azul: $ 20
+* Bacon: $ 50
+* Huevo: $ 10
+* Mollejas: $ 80
+* Cebollas caramelizadas: $ 60
+
+Se pide diseñar el modelo de clases que permita calcular el costo final de una hamburguesa teniendo el cuenta la cantidad de medallones y los extras.
+
+
+
+### Papas fritas
+
+Las papas fritas viene de 3 tamaños:
+
+* chica: $ 10
+* mediana: $ 15
+* grande: $ 20
+
+Y se les pueden agregar los siguientes extras:
+
+* cheddar: $ 30
+* bacon: $ 45
+* salsa barbacoa: $ 20
+
+Al igual que las hamburguesas, se pide diseñar el modelo de clases que permita calcular el costo final de una porcion de papas teniendo en cuenta los extras.
+
+
+###  Menu
+
+Los menus consisten en comprar una hamburguesas, una porcion de papas y una gaseosa cola.
+El precio del menu consiste en:
+
+costo = precio hamburguesas + precio papas + 40 pesos por la gaseosa - descuento por menu
+
+El descuento por cada menu es del 20% de la suma entre el precio de la hamburguesa y las papas.
+
+
+## 3 - Figuras
+
+
+Se solicita modelar un conjunto de figuras geométricas a las cuales se les puede preguntar su:
+
+* `Double area()`
+* `String color()`
+* `Boolean esRegular()`
+
+Todas las figuras geométricas tienen un color definido. Las figuras permiten ser pintadas y así cambia de color.
+
+* `pintar(Color: color)`
+
+Se considera que un figura es igual a otra si el tipo,area y color son igual.
+
+### Figuras Básicas :
+
+#### Circulo
+Tiene como atributo `radio` de tipo `Integer`. El area se calcula:
+
+* `area`: Pi * Radio ^ 2
+
+y es una figura `regular`.
+
+#### Semicirculo
+Tiene los mismos atributos que circulo pero su `area` se calculan distinto:
+
+* `area`: es la mitad de la superficie del circulo
+
+No es una figura `regular`.
+
+#### Triángulo
+Tiene como atributos la base y la altura y su area se calcula de la siguiente forma:
+
+* `area`: base * altura / 2
+
+y es una figura `regular`.
+
+
+#### Rectángulo
+Tambien tiene como atributos la base y la altura y su area se calcula de la siguiente forma:
+
+* `area`: base * altura
+
+y es una figura `regular`.
+
+
+### Pruebas
+
+1. Crear un circulo de radio `10` y color `amarillo` y verificar que su area es aproximadamente `314,16`.
+2. Crear un Semicirculo de radio `10` y color `verde` y verificar que su area es aproximadamente `157,08`.
+3. Crear un Triangulo de base `10` y altura `20` y de color `azúl` y verificar que su area es `100`.
+4. Crear un Rectangulo de base `10` y altura `20` y  color `violeta` y verificar que su area es `200`.
+5. Crear otro Rectangulo de base `10` y altura `20` y  color `violeta` y verificar que es igual al creado en el punto anterior.
+6. Pintar de color `verde` alguno de los rectangulos ya creado y verficiar que ya no son iguales.
+7. Ordenar **programaticamente** por su area las figuras creadas de menos a mayor y verificar q la mas pequeña es el triángulo y la mas grande es el circulo.
+
+### Figuras agujereadas
+
+Mas allá de las figuras básicas es posible tener figuras `agujereadas`. Tienen básicamente los mismos atributos que las figuras básicas pero cambia la forma en la que se calcula el area.
+El area de una figura agujereada es un tercio del area de la figura original, por ejemplo:
+
+* Area del Rectángulo agujereado = base * altura / 3
+
+Se solicita poder tener una figura agujereada  por cada figura básica existente.
+
+## Extra Extra !!
+
+### Ordenamientos alternativos
+
+Incorporar al diseño la posibilidad de ordenar las figuras por criterios alternativos al area. Por ejemplo, es deseable poder ordenar las figuras por los siguientes criterios:
+
+- Por color. Siendo el orden de los colores arbitrario y definido por ustedes. Lo importante es que se respete el orden definido por uds.
+
+- Por tipo (primero regular y luego irregular) y luego por area.
+
+### Validaciones
+
+Se solicita impedir q se pueda instaciar figurar con dimensiones `inválidas`, por ejemplo, un cuadrado de altura negativa o un triangulo de base 0.
+En estos casos se debe arrojar una excepción notificando de tal condición.
+
+Realizar los tests necesarios para verificar ambos extrás.
+
+
 
