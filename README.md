@@ -69,7 +69,7 @@ Se solicita:
 * se puede modificar o cambiar cualquiera de las clases provistas salvo la signatura de los métodos de las clases Amadeus, Sabre y Worldspan.
 
 
-## 3 - Pumper Nic
+## 4 - Pumper Nic
 
 ### Hamburguesas
 
@@ -124,7 +124,7 @@ costo = precio hamburguesas + precio papas + 40 pesos por la gaseosa - descuento
 El descuento por cada menu es del 20% de la suma entre el precio de la hamburguesa y las papas.
 
 
-## 3 - Figuras
+## 5 - Figuras
 
 
 Se solicita modelar un conjunto de figuras geométricas a las cuales se les puede preguntar su:
